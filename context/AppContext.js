@@ -7,7 +7,6 @@ const AppContext = createContext();
 export function AppProvider({ children }) {
 	const [players, setPlayers] = useState(['', '', '']);
 	const [imgSrc, setImgSrc] = useState(null);
-	const [photos, setPhotos] = useState([]);
 
 	const updateName = (index, newValue) => {
 		setPlayers((prevArray) => {

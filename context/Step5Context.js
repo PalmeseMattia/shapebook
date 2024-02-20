@@ -16,14 +16,16 @@ export function Step5Provider({ children }) {
 					di esser riuscito a prepare la miglior torta di fagioli del reame. \
 					servitori che dovranno pulire il pastrocchio non sono però \
 					altrettanto contenti.",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	[]
 		},
 		{
 			img:	Conclusion_5_B,
 			text:	"Stufa di correre dietro a Tombolone, Ramina decide di \
 					lasciare il suo lavoro. Invece di continuare a fare la garzona \
 					diventa l'apprendista di Boffio.",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	[]
 		},
 		{
 			img:	Conclusion_5_C,
@@ -31,28 +33,32 @@ export function Step5Provider({ children }) {
 			competizione \"Duello di Puzzette\", ma prima che venga \
 			incoronato \"Principe Venticello\", tutti i giudici della gara \
 			svengono dalla puzza.",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	[]
 		},
 		{
 			img:	Conclusion_5_D,
 			text:	"La principessa Rosetta è terrorizzata di ammettere la sua \
 			colpa. Tenta allora di ricostruire la magica corona andata in \
 			frantumi con le corde del mandolino.",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	[]
 		},
 		{
 			img:	Conclusion_5_E,
 			text:	"Dama Bofonia è rientrata nelle sue stanze e si dedica alla sua \
 			attività preferita: truccare il suo gatto. Nel paraglia però, le si sono \
 			rotti gli occhiali.",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	[]
 		},
 		{
 			img:	Conclusion_5_F,
 			text:	"A causa dell'esplosione i vestiti di Ditirello si sono strappati \
 			ed impolverati. Tuttavia i suoi fan sembrano apprezzare questa \
 			novità.",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	[]
 		},
 	]
 	return (

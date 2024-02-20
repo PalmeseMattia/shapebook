@@ -20,7 +20,7 @@ function step2() {
 	if(isLoading) return <p>Loading</p>
 	return (
 		<div>
-			<GameLayout data={data} link="step3" photos={Step2Context.photos}/>
+			<GameLayout data={data} link="step3"/>
 		</div>
 	)
 }

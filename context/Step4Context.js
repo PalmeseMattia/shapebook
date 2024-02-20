@@ -14,7 +14,12 @@ export function Step4Provider({ children }) {
 			soddisfatto verso la cucina, guidato da un forte odore di fagioli. In \
 			cucina il calderone di Almiro è esploso, schizzando tutte le pareti \
 			di essenza di fagioli purissima",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	["",""],
+			left1: "30%",
+			top1: "30%",
+			left2: "50%",
+			top2: "50%",
 		},
 		{
 			img:	evo4_B,
@@ -22,14 +27,24 @@ export function Step4Provider({ children }) {
 			Boffio e la Dama Bofonia saltano giù dalla finestra. Precipitano \
 			proprio su Ramina che è appena riuscita a risalire in groppa a \
 			Tombolone",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	["",""],
+			left1: "30%",
+			top1: "30%",
+			left2: "50%",
+			top2: "50%",
 		},
 		{
 			img:	evo4_C,
 			text:	"Con un colpo mal mirato, la principessa Rosetta ha spezzato \
 			la magica corona del regno, che esplode distruggendo il salone. Il \
 			pavimento crolla proprio sulla testa del povero Ditirello",
-			alt:	"TODO"
+			alt:	"TODO",
+			screenshot:	["",""],
+			left1: "30%",
+			top1: "30%",
+			left2: "50%",
+			top2: "70%",
 		},
 	]
 	return (

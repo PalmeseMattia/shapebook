@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useAppContext } from '@/context/AppContext';
 import camera from "../public/camera.svg";
 
-function CameraPopup() {
+function CameraPopup({setScreen}) {
 	const AppContext = useAppContext();
 	const [open, setOpen] = React.useState(false);
 	const handleOpen = () => setOpen(true);
@@ -31,7 +31,7 @@ function CameraPopup() {
 	    			{({ getScreenshot }) => (
 	    				<button
 	    					onClick={() => {
-	    						console.log(getScreenshot())
+	    						setScreen(getScreenshot());
 	    				}}
 	    				>
 							<Image src={camera} className='object-contain h-1/6' alt='tasto per scattare una foto'/>

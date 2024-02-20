@@ -15,7 +15,8 @@ export function Step2Provider({ children }) {
 			text:	"Nella cucina del castello viveva Almiro, il Mago pasticcione.\
 					Mentre preparava la torta di fagioli del mercoledì, gli cadde un\
 					alambicco dentro il calderone",
-			alt:	"Almiro che col sedere fa cadere un alambicco nel calderone mentre inforna la torta"
+			alt:	"Almiro che col sedere fa cadere un alambicco nel calderone mentre inforna la torta",
+			screenshot:	[]
 		},
 		{
 			img:	ramina,
@@ -23,14 +24,16 @@ export function Step2Provider({ children }) {
 					dello stalliere. Ramina non si era accorta di aver lasciato aperta la\
 					porta della stalla, e Tombolone, lo stallone preferito della regina,\
 					ne aveva approfittato per farsi una galoppata",
-			alt:	"Ramina si sveglia sulla paglia e spaventata vede Tombolone correre nel prato"
+			alt:	"Ramina si sveglia sulla paglia e spaventata vede Tombolone correre nel prato",
+			screenshot:	[]
 		},
 		{
 			img:	lancitonto,
 			text:	"Nell'arena del castello, Ser Lancitonto si allena a mangiare\
 					dei fagioli. Vuole vincere il torneo di puzzette per conquistare il\
 					titolo di \"Principe Venticello\" e fama imperitura",
-			alt:	"Lancitonto mangia fagioli e uno Scoiattolo sviene per aver annusato la puzzetta di Lancitonto"
+			alt:	"Lancitonto mangia fagioli e uno Scoiattolo sviene per aver annusato la puzzetta di Lancitonto",
+			screenshot:	[]
 		},
 		{
 			img:	rosetta,
@@ -38,7 +41,8 @@ export function Step2Provider({ children }) {
 					nascosto con la mazza da guerra. Immagina di combattere contro\
 					un feroce drago albino, ma durante la lotta colpisce per errore la\
 					magica corona del regno.",
-			alt:	"Dall'immaginazione di Rosetta il drago la guarda colpire per errore la corona"
+			alt:	"Dall'immaginazione di Rosetta il drago la guarda colpire per errore la corona",
+			screenshot:	[]
 		},
 		{
 			img:	bofonia,
@@ -46,14 +50,16 @@ export function Step2Provider({ children }) {
 					Bofonia si pavoneggia davanti al suo gigantesco riflesso. Nel\
 					frattempo, Boffio, l'altezzoso gato della Dama, si specchia a fianco\
 					della sua padrona, cimentandosi in bizzarre pose dinamiche",
-			alt:	"Dama Bofonia si specchia e Boffio sta per andare a sbattere sullo specchio."
+			alt:	"Dama Bofonia si specchia e Boffio sta per andare a sbattere sullo specchio.",
+			screenshot:	[]
 		},
 		{
 			img:	ditirello,
 			text:	"Nella sala degli strumenti del castello, Ditirello il menestrello\
 					prova una ballata. Ad udire la sua voce sgraziata, il mandolino si\
 					rifiuta di suonare.",
-			alt:	"Ditirello canta molto stonato ed il mandolino non lo sopporta."
+			alt:	"Ditirello canta molto stonato ed il mandolino non lo sopporta.",
+			screenshot:	[]
 		},
 	]
 	let photos = [];
