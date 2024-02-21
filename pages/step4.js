@@ -10,10 +10,10 @@ function getMultipleRandom(arr, num) {
 function Step4() {
 	const Step4Context = useStep4Context();
 	const [data, setData] = useState();
-	const [isLoading, setLoading] = useState(true)
+	const [isLoading, setLoading] = useState(true);
 
 	useEffect(() => {
-		setData(getMultipleRandom(Step4Context.level, 2));	
+		setData(getMultipleRandom(Step4Context.level, 2));
 		setLoading(false);
 	}, [])
 

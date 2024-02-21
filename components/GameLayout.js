@@ -9,6 +9,10 @@ function GameLayout({data, link}) {
 	const [index, setIndex] = useState(0);
 	const [img1, setImage1] = useState("");
 	const [img2, setImage2] = useState("");
+	console.log(data[index].top1)
+	console.log(data[index].top2)
+	console.log(data[index].left1)
+	console.log(data[index].left2)
 	
 	return (
 	<div className='h-screen w-screen flex flex-col'>
@@ -20,26 +24,26 @@ function GameLayout({data, link}) {
 				<Image src={data[index].img} fill={false} className='object-contain' priority={true} alt={data[index].alt}></Image>
 				
 				{/* Quadratino importante */}
-				<div className={`bg-white w-[15%] h-[15%] absolute left-[${data[index].top1}] top-[${data[index].left1}] rounded-full`}>
+				<div className={`absolute bg-white w-[15%] h-[15%]`} style={{ left: `${data[index].left1}%`, top: `${data[index].top1}%` }}>
 					{img1 == "" 
 						? <p>Stringa vuota</p> 
-						: <img src={data[index].screenshot[0]} className='object-fill w-auto rounded-full'></img>}
+						: <img src={data[index].screenshot[0]}></img>}
 				</div>
-				{/* Quadratino importante */}
-				<div className={`bg-white w-[15%] h-[15%] absolute left-[${data[index].top2}] top-[${data[index].left2}] rounded-full`}>
+				<div className={`absolute bg-orange-950 w-[10%] h-[15%]`} style={{ left: `${data[index].left1}%`, top: `${data[index].top1}%` }}>
 					{img2 == "" 
 						? <p>Stringa vuota</p> 
-						: <img src={data[index].screenshot[1]} className='object-fill w-auto rounded-full'></img>}
+						: <img src={data[index].screenshot[1]}></img>}
 				</div>
-			</div>
-			
-			{/* Text and Button */}
-			<div className="mt-2 h-1/2 md:w-1/2 md:h-full md:mt-0 md:order-3 bg-green-400 rounded-md flex flex-col items-center md:p-4">
+
 				<div className='flex flex-row'>
 					<CameraPopup setScreen={(x) => {data[index].screenshot[0] = x; setImage1(x)}}/>
 					<CameraPopup setScreen={(x) => {data[index].screenshot[1] = x; setImage2(x)}}/>
 				</div>
-				
+			
+			</div>
+			
+			{/* Text and Button */}
+			<div className="mt-2 h-1/2 md:w-1/2 md:h-full md:mt-0 md:order-3 bg-green-400 rounded-md flex flex-col items-center md:p-4">
 				<p className="text-white h-[70%] mt-4 md:text-4xl lg:text-6xl bg-red-400 w-full md:p-2 text-balance">{data[index].text}</p>
 				{index == 0 
 					? <PlayerPopup index={index} setIndex={setIndex} title="Done!"/> 
