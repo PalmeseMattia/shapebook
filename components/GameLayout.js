@@ -21,20 +21,24 @@ function GameLayout({data, link}) {
 			
 			{/* Image Container */}
 			<div className="relative md:w-1/2 md:h-full md:order-2 bg-orange-400 rounded-md h-2/3 flex flex-col justify-center items-center">
-				<Image src={data[index].img} fill={false} className='object-contain' priority={true} alt={data[index].alt}></Image>
-				
-				{/* Quadratino importante */}
-				<div className={`absolute bg-white w-[15%] h-[15%]`} style={{ left: `${data[index].left1}%`, top: `${data[index].top1}%` }}>
-					{img1 == "" 
-						? <p>Stringa vuota</p> 
-						: <img src={data[index].screenshot[0]}></img>}
+				<div className='relative'>
+					<Image src={data[index].img} fill={false} className='object-contain' priority={true} alt={data[index].alt}></Image>
+					{/* Quadratino importante */}
+					<div 
+						className={`absolute bg-white rounded-full`} 
+						style={{ left: `${data[index].left1}%`, top: `${data[index].top1}%`, width: `${data[index].width1}%`, height: `${data[index].height1}%` }}>
+							{img1 == "" 
+								? <p>Stringa vuota</p> 
+								: <img src={data[index].screenshot[0]}></img>}
+					</div>
+					<div 
+						className={`absolute bg-orange-950 rounded-full`} 
+						style={{ left: `${data[index].left2}%`, top: `${data[index].top2}%`,  width: `${data[index].width2}%`, height: `${data[index].height2}%` }}>
+							{img2 == "" 
+								? <p>Stringa vuota</p> 
+								: <img src={data[index].screenshot[1]}></img>}
+					</div>
 				</div>
-				<div className={`absolute bg-orange-950 w-[10%] h-[15%]`} style={{ left: `${data[index].left1}%`, top: `${data[index].top1}%` }}>
-					{img2 == "" 
-						? <p>Stringa vuota</p> 
-						: <img src={data[index].screenshot[1]}></img>}
-				</div>
-
 				<div className='flex flex-row'>
 					<CameraPopup setScreen={(x) => {data[index].screenshot[0] = x; setImage1(x)}}/>
 					<CameraPopup setScreen={(x) => {data[index].screenshot[1] = x; setImage2(x)}}/>
