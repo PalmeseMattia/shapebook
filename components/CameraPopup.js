@@ -39,7 +39,7 @@ function CameraPopup({setScreen}) {
 							<div className='flex flex-row items-center'>
 								<Image src={camera} className='object-contain h-1/6' alt='tasto per scattare una foto'/>
 								<div className='h-20 w-20 bg-red-400 text-white items-center justify-center flex rounded-full'>
-									<button onClick={handleClose} className='w-full h-full'>Chiudi</button>
+									<div onClick={handleClose} className='w-full h-full items-center justify-center flex'>Chiudi</div>
 								</div>
 							</div>
 						</button>

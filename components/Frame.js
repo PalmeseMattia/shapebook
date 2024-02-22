@@ -12,7 +12,7 @@ function Frame({data}) {
 				<img src={data.screenshot[0]} className='w-[180%] h-[180%] object-cover'></img>
 		</div>
 		<div 
-			className={`absolute bg-orange-950 rounded-full overflow-clip`} 
+			className={`absolute bg-white rounded-full overflow-clip`} 
 			style={{ left: `${data.left2}%`, top: `${data.top2}%`,  width: `${data.width2}%`, height: `${data.height2}%` }}>
 				<img src={data.screenshot[1]} className='w-[180%] h-[180%] object-cover'></img>
 		</div>
