@@ -33,6 +33,7 @@ function CameraPopup({setScreen}) {
 	    				<button
 	    					onClick={() => {
 	    						setScreen(getScreenshot());
+								handleClose();
 	    				}}
 	    				>
 							<div className='flex flex-row items-center'>
