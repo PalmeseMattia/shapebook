@@ -27,6 +27,7 @@ function CameraPopup({setScreen}) {
 	  				<Webcam
 	    				audio={false}
 	    				screenshotFormat="image/jpeg"	
+						mirrored={true}
 	  				>
 	    			{({ getScreenshot }) => (
 	    				<button
@@ -34,8 +35,13 @@ function CameraPopup({setScreen}) {
 	    						setScreen(getScreenshot());
 	    				}}
 	    				>
-							<Image src={camera} className='object-contain h-1/6' alt='tasto per scattare una foto'/>
-	    				</button>
+							<div className='flex flex-row items-center'>
+								<Image src={camera} className='object-contain h-1/6' alt='tasto per scattare una foto'/>
+								<div className='h-20 w-20 bg-red-400 text-white items-center justify-center flex rounded-full'>
+									<button onClick={handleClose} className='w-full h-full'>Chiudi</button>
+								</div>
+							</div>
+						</button>
 	    			)}
 	  				</Webcam>
 				</Box>
