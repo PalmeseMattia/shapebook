@@ -25,14 +25,14 @@ function GameLayout({data, link, saveResult}) {
 						style={{ left: `${data[index].left1}%`, top: `${data[index].top1}%`, width: `${data[index].width1}%`, height: `${data[index].height1}%` }}>
 							{img1 == "" 
 								? <p>o</p> 
-								: <img src={data[index].screenshot[0]} className='w-[120%] h-[120%] object-cover'></img>}
+								: <img src={data[index].screenshot[0]} className='w-[180%] h-[180%] object-cover'></img>}
 					</div>
 					<div 
 						className={`absolute bg-orange-950 rounded-full overflow-clip`} 
 						style={{ left: `${data[index].left2}%`, top: `${data[index].top2}%`,  width: `${data[index].width2}%`, height: `${data[index].height2}%` }}>
 							{img2 == "" 
 								? <p>o</p> 
-								: <img src={data[index].screenshot[1]} className='w-[100%] h-[100%] object-cover'></img>}
+								: <img src={data[index].screenshot[1]} className='w-[180%] h-[180%] object-cover'></img>}
 					</div>
 				</div>
 				<div className='flex flex-row'>
