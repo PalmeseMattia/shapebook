@@ -10,6 +10,7 @@ function final() {
 	const result5 = AppContext.result5;
 	console.log(result2)
 	console.log(AppContext.result2)
+	if(result2 == null || result4 == null || result5 == null) return <p>loading</p>
 	return (
 		<div>
 			<Frame data={result2}/>
