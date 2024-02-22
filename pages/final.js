@@ -12,8 +12,13 @@ function final() {
 	console.log(AppContext.result2)
 	if(result2 == null || result4 == null || result5 == null) return <p>loading</p>
 	return (
-		<div>
-			<Frame data={result2}/>
+		<div className='bg-purple-500 p-8 w-screen items-center justify-center'>
+			<Frame data={result2[0]}/>
+			<Frame data={result2[1]}/>
+			<Frame data={result4[0]}/>
+			<Frame data={result4[1]}/>
+			<Frame data={result5[0]}/>
+			<Frame data={result5[1]}/>
 		</div>
   	)
 }
