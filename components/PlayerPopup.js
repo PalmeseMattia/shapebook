@@ -22,7 +22,7 @@ function PlayerPopup({index, setIndex, title}) {
 				className='h-full w-full flex items-center justify-center p-4'
 			>
 				<div className="flex flex-col items-center justify-center p-12 bg-slate-100 rounded-2xl">
-	  				<p>Passa il telefono a</p>
+	  				<p>Passa il telefono</p>
 				</div>
 			</Modal>
 		</div>
