@@ -5,14 +5,10 @@ import PlayerPopup from './PlayerPopup';
 import { useState } from 'react';
 import Link from 'next/link';
 
-function GameLayout({data, link}) {
+function GameLayout({data, link, saveResult}) {
 	const [index, setIndex] = useState(0);
 	const [img1, setImage1] = useState("");
 	const [img2, setImage2] = useState("");
-	console.log(data[index].top1)
-	console.log(data[index].top2)
-	console.log(data[index].left1)
-	console.log(data[index].left2)
 	
 	return (
 	<div className='h-screen w-screen flex flex-col'>
@@ -51,7 +47,10 @@ function GameLayout({data, link}) {
 				<p className="text-white h-[70%] mt-4 md:text-4xl lg:text-6xl bg-red-400 w-full md:p-2 text-balance">{data[index].text}</p>
 				{index == 0 
 					? <PlayerPopup index={index} setIndex={setIndex} title="Done!"/> 
-					: <Link href={link} className="bg-blue-500 text-white px-4 py-2 rounded-md mt-2 w-32 md:w-64 md:mt-16 justify-center items-center flex"><p>Next Stage!</p></Link>
+					: <Link 
+						href={link} 
+						onClick={() => saveResult(data)}
+						className="bg-blue-500 text-white px-4 py-2 rounded-md mt-2 w-32 md:w-64 md:mt-16 justify-center items-center flex"><p>Next Stage!</p></Link>
 				}
 			</div>
 		</div>

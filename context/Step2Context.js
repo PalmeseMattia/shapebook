@@ -110,9 +110,9 @@ export function Step2Provider({ children }) {
 			height2: "21",
 		},
 	]
-	let photos = [];
+	let result;
 	return (
-		<Step2Context.Provider value={{level}}>
+		<Step2Context.Provider value={{level, result}}>
 			{children}
 		</Step2Context.Provider>
 	);

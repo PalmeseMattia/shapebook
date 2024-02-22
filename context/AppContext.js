@@ -1,5 +1,4 @@
 import { createContext, useContext, useState } from 'react';
-import bear from "../public/bear.svg"
 
 
 const AppContext = createContext();
@@ -7,6 +6,9 @@ const AppContext = createContext();
 export function AppProvider({ children }) {
 	const [players, setPlayers] = useState(['', '', '']);
 	const [imgSrc, setImgSrc] = useState(null);
+	const [result2, setResult2] = useState(null);
+	const [result4, setResult4] = useState(null);
+	const [result5, setResult5] = useState(null);
 
 	const updateName = (index, newValue) => {
 		setPlayers((prevArray) => {
@@ -49,7 +51,12 @@ export function AppProvider({ children }) {
 				removePlayer,
 				imgSrc,
 				setImgSrc,
-				bear
+				result2,
+				setResult2,
+				result4,
+				setResult4,
+				result5,
+				setResult5
 			}}>
 			{children}
 		</AppContext.Provider>

@@ -1,6 +1,7 @@
 import GameLayout from '@/components/GameLayout'
 import React, { useEffect, useState } from 'react'
 import { useStep2Context } from '@/context/Step2Context';
+import { useAppContext } from '@/context/AppContext';
 
 function getMultipleRandom(arr, num) {
 	const shuffled = [...arr].sort(() => 0.5 - Math.random());
@@ -9,6 +10,7 @@ function getMultipleRandom(arr, num) {
 
 function step2() {
 	const Step2Context = useStep2Context();
+	const AppContext = useAppContext();
 	const [data, setData] = useState();
 	const [isLoading, setLoading] = useState(true)
 
@@ -20,7 +22,7 @@ function step2() {
 	if(isLoading) return <p>Loading</p>
 	return (
 		<div>
-			<GameLayout data={data} link="step3"/>
+			<GameLayout data={data} link="step3" saveResult={(d) => AppContext.setResult2(d)}/>
 		</div>
 	)
 }

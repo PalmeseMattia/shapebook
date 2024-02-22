@@ -59,8 +59,9 @@ export function Step4Provider({ children }) {
 			height2: "11",
 		},
 	]
+	let result = [];
 	return (
-		<Step4Context.Provider value={{level}}>
+		<Step4Context.Provider value={{level, result}}>
 			{children}
 		</Step4Context.Provider>
 	);
