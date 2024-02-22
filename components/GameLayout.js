@@ -44,7 +44,7 @@ function GameLayout({data, link, saveResult}) {
 			
 			{/* Text and Button */}
 			<div className="mt-2 h-1/2 md:w-1/2 md:h-full md:mt-0 md:order-3 bg-green-400 rounded-md flex flex-col items-center md:p-4">
-				<p className="text-white h-[70%] mt-4 md:text-4xl lg:text-6xl bg-red-400 w-full md:p-2 text-balance">{data[index].text}</p>
+				<p className="text-white h-[70%] mt-4 md:text-4xl lg:text-6xl bg-red-400 w-full md:p-2 text-balance whitespace-normal overflow-scroll">{data[index].text}</p>
 				{index == 0 
 					? <PlayerPopup index={index} setIndex={setIndex} title="Done!"/> 
 					: <Link 

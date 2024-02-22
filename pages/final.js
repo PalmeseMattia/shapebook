@@ -14,11 +14,22 @@ function final() {
 	return (
 		<div className='bg-purple-500 p-8 w-screen items-center justify-center'>
 			<Frame data={result2[0]}/>
+			<p>{result2[0].text}</p>
+
 			<Frame data={result2[1]}/>
+			<p>{result2[1].text}</p>
+			
 			<Frame data={result4[0]}/>
+			<p>{result4[0].text}</p>
+			
 			<Frame data={result4[1]}/>
+			<p>{result4[1].text}</p>
+			
 			<Frame data={result5[0]}/>
+			<p>{result5[0].text}</p>
+
 			<Frame data={result5[1]}/>
+			<p>{result5[1].text}</p>
 		</div>
   	)
 }
