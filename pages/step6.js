@@ -20,7 +20,7 @@ function Step6() {
 	if(isLoading) return <p>Loading</p>
 	return (
 		<div>
-			<ConnectionLayout data={data} link="step1"/>
+			<ConnectionLayout data={data} link="final"/>
 		</div>
 	)
 }

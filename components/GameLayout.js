@@ -25,18 +25,18 @@ function GameLayout({data, link}) {
 					<Image src={data[index].img} fill={false} className='object-contain' priority={true} alt={data[index].alt}></Image>
 					{/* Quadratino importante */}
 					<div 
-						className={`absolute bg-white rounded-full`} 
+						className={`absolute bg-white rounded-full overflow-clip`} 
 						style={{ left: `${data[index].left1}%`, top: `${data[index].top1}%`, width: `${data[index].width1}%`, height: `${data[index].height1}%` }}>
 							{img1 == "" 
-								? <p>Stringa vuota</p> 
-								: <img src={data[index].screenshot[0]}></img>}
+								? <p>o</p> 
+								: <img src={data[index].screenshot[0]} className='w-[100%] h-[100%] object-cover'></img>}
 					</div>
 					<div 
-						className={`absolute bg-orange-950 rounded-full`} 
+						className={`absolute bg-orange-950 rounded-full overflow-clip`} 
 						style={{ left: `${data[index].left2}%`, top: `${data[index].top2}%`,  width: `${data[index].width2}%`, height: `${data[index].height2}%` }}>
 							{img2 == "" 
-								? <p>Stringa vuota</p> 
-								: <img src={data[index].screenshot[1]}></img>}
+								? <p>o</p> 
+								: <img src={data[index].screenshot[1]} className='w-[100%] h-[100%] object-cover'></img>}
 					</div>
 				</div>
 				<div className='flex flex-row'>
