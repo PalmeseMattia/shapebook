@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useAppContext } from '@/context/AppContext';
 import Frame from '@/components/Frame';
 import { useStep1Context } from '@/context/Step1Context';
 import { useStep3Context } from '@/context/Step3Context';
 import { useStep6Context } from '@/context/Step6Context';
 import ConnectionFrame from '@/components/ConnectionFrame';
+import { Howl } from 'howler';
 
-
-function final() {
+function final() {	
 	const AppContext = useAppContext();
 	const Step1Context = useStep1Context();
 	const Step3Context = useStep3Context();
@@ -17,9 +17,22 @@ function final() {
 	const result5 = AppContext.result5;
 	console.log(result2)
 	console.log(AppContext.result2)
+	useEffect(() => {
+		const sound1 = new Howl({
+			src: ['/musiche/ShapeBook01.wav'],
+			autoplay: true,
+			loop: true,
+			volume: 1.0,
+		  });
+		sound1.play()
+		return () => {
+			// Scarica entrambi i suoni quando il componente viene smontato
+			sound1.unload();
+		};
+	}, [])
 	if(result2 == null || result4 == null || result5 == null) return <p>loading</p>
 	return (
-		<div className='bg-purple-500 p-8 w-screen items-center justify-center text-4xl flex flex-col text-white'>
+		<div className='bg-orange-300 p-8 w-screen items-center justify-center text-4xl flex flex-col text-white'>
 			{/* Intro */}
 			<ConnectionFrame data={Step1Context.level[0]}/>
 			<p className='p-8'>{Step1Context.level[0].text}</p>

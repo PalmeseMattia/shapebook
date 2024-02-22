@@ -11,12 +11,12 @@ function GameLayout({data, link, saveResult}) {
 	const [img2, setImage2] = useState("");
 	
 	return (
-	<div className='h-screen w-screen flex flex-col'>
-		<div className="p-4 item justify-evenly bg-white flex flex-col md:flex-row md:max-w-full md:space-x-4 h-full text-2xl">
+	<div className='h-screen w-screen flex flex-col bg-orange-300'>
+		<div className="p-4 item justify-evenly flex flex-col md:flex-row md:max-w-full md:space-x-4 h-full text-2xl">
 			
 			
 			{/* Image Container */}
-			<div className="relative md:w-1/2 md:h-full md:order-2 bg-orange-400 rounded-md h-2/3 flex flex-col justify-center items-center">
+			<div className="relative md:w-1/2 md:h-full md:order-2 rounded-md h-2/3 flex flex-col justify-center items-center">
 				<div className='relative'>
 					<Image src={data[index].img} fill={false} className='object-contain' priority={true} alt={data[index].alt}></Image>
 					{/* Quadratino importante */}
@@ -43,8 +43,8 @@ function GameLayout({data, link, saveResult}) {
 			</div>
 			
 			{/* Text and Button */}
-			<div className="mt-2 h-1/2 md:w-1/2 md:h-full md:mt-0 md:order-3 bg-green-400 rounded-md flex flex-col items-center md:p-4">
-				<p className="text-white h-[70%] mt-4 md:text-4xl lg:text-6xl bg-red-400 w-full md:p-2 text-balance whitespace-normal overflow-scroll">{data[index].text}</p>
+			<div className="mt-2 h-1/2 md:w-1/2 md:h-full md:mt-0 md:order-3  rounded-md flex flex-col items-center md:p-4">
+				<p className="text-white h-[70%] mt-4 md:text-4xl lg:text-6xl  w-full md:p-2 text-balance whitespace-normal overflow-scroll border-dotted border-4 border-white">{data[index].text}</p>
 				{index == 0 
 					? <PlayerPopup index={index} setIndex={setIndex} title="Done!"/> 
 					: <Link 

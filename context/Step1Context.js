@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from 'react';
 import intro_1_A from "../public/img/1_Intro_A.jpg";
 import intro_1_B from "../public/img/1_Intro_B.png";
+// import intro_dub_1 from "../public/dub/1_INTRO.wav";
 
 const Step1Context = createContext();
 
@@ -10,7 +11,8 @@ export function Step1Provider({ children }) {
 			img:	intro_1_A,
 			text:	"C'era una volta, in un regno ricco di fiumi e verde di \
 			boschi, un grande castello di Zucchero e Glassa.",
-			alt:	"TODO"
+			alt:	"TODO",
+			//dub:	intro_dub_1
 		},
 		{
 			img:	intro_1_B,

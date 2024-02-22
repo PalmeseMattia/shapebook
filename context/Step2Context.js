@@ -5,6 +5,12 @@ import pre_2_C from "../public/img/2_C.png";
 import pre_2_D from "../public/img/2_D.png";
 import pre_2_E from "../public/img/2_E.png";
 import pre_2_F from "../public/img/2_F.png";
+//import audio_2a from "../public/dub/2_A.wav";
+//import audio_2b from "../public/dub/2_B.wav";
+//import audio_2c from "../public/dub/2_C.wav";
+//import audio_2d from "../public/dub/2_D.wav";
+//import audio_2e from "../public/dub/2_E.wav";
+//import audio_2f from "../public/dub/2_F.wav";
 
 const Step2Context = createContext();
 
@@ -25,6 +31,8 @@ export function Step2Provider({ children }) {
 			left2: "52",
 			width2: "10",
 			height2: "15",
+			//audio: audio_2a
+
 		},
 		{
 			img:	pre_2_B,
@@ -42,6 +50,7 @@ export function Step2Provider({ children }) {
 			left2: "52",
 			width2: "10",
 			height2: "13",
+			//audio: audio_2b
 		},
 		{
 			img:	pre_2_C,
@@ -58,6 +67,7 @@ export function Step2Provider({ children }) {
 			top2 : "49",
 			width2: "8",
 			height2: "12",
+			//audio: audio_2c
 		},
 		{
 			img:	pre_2_D,
@@ -75,6 +85,7 @@ export function Step2Provider({ children }) {
 			top2 : "61",
 			width2: "8",
 			height2: "12",
+			//audio: audio_2d
 		},
 		{
 			img:	pre_2_E,
@@ -92,6 +103,7 @@ export function Step2Provider({ children }) {
 			top2 : "67",
 			width2: "7",
 			height2: "10",
+			//audio: audio_2e
 		},
 		{
 			img:	pre_2_F,
@@ -108,6 +120,7 @@ export function Step2Provider({ children }) {
 			top2 : "67",
 			width2: "14",
 			height2: "21",
+			//audio: audio_2f
 		},
 	]
 	let result;
